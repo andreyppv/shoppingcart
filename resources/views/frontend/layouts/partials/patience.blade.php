@@ -1,0 +1,3 @@
+@if($settings['site.patience'] == YES)
+<div id="custom-notification">Please note that RockDesign will be closed on July 1st for Canada Day. We will reopen with regular business hours on Monday July 4th. For the purposes of production time July 1st will not be considered a business day. Please Email to: <a href="mailto:{{ $settings['email.saler_email'] }}">{{ $settings['email.saler_email'] }}</a> if you require assistance ordering or have any questions.</div>    
+@endif

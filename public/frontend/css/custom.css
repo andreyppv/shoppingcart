@@ -1,0 +1,196 @@
+.clear {clear: both;}
+.cursor-pointer {cursor: pointer;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.status-primary .status {color: #0080ff !important;}
+.status-primary .status::before {background: #0080ff none repeat scroll 0 0 !important;}
+
+a span.lg-but {display:block;}
+.checkbox input[type="checkbox"] {display:none;}
+.small-inv-img-wrap1 {background-size:100% 100% !important;}
+.checkout-page .top-block li.allow {cursor: pointer;}
+.checkout-page .chekout-but {border: none; margin-bottom:20px;}
+.has-error .help-block,
+.errmsg {color: #ff3155;}
+.top_menu .menu li.last-child {margin-right:0;}
+.top_menu .menu li.mobile-menu-item {display:none;}  
+
+.sign-bl-wrap .log-res-pass {display:block;}
+.top_menu .menu .sub-menu-col:first-child {height:auto; min-height:245px;}
+/*.templ-detail .det-ord-cont select {padding-top:5px; padding-bottom:4px;}*/
+.temp-info-wrap {height:50px; margin-top:15px; margin-bottom:5px;}
+.templ-detail .det-ord-cont .price-html {
+    margin: 30px 0;
+}
+.templ-detail .det-ord-cont .price-html .avg-price {font-size: 35px;}
+.templ-detail .det-ord-cont .price-html .avg-price span {font-size:20px;}
+.templ-detail .det-ord-cont .price-html .total-price {margin: 0; color: green; font-size: 25px;}                
+.templ-detail .det-ord-cont .price-html .saved-price {color: orange; font-size: 20px;}
+.templ-detail .det-ord-cont select.product-option { width: 91%; }
+.templ-detail .share-icons-wrap a {cursor:pointer; display:inline-block; z-index: 99999;}
+.templ-detail .share-icons-wrap a.pswp__button--show {display:inline;}
+.templ-detail .share-icons-wrap a img {margin: 10px; vertical-align: middle;}
+.options-box .option-item-box {float: left; width: 50%;}
+.select-warning {
+    color: #ff3155;
+    font-family: "GothamMedium",sans-serif;
+    font-size: 14px;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+/*.card-item-info-wrap {
+    position: inherit;
+    padding-left: 0;
+    margin-left: 285px;
+}*/
+
+.pswp__caption__center {
+    color: #898989;
+    letter-spacing: 0.5px;
+    max-width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+}
+.pswp__caption__center a span {margin-right:0 !important;}
+
+/*.ld-item-info-wrap img {position: inherit; float: left;}*/
+/*.ld-item-info-wrap > div {display: block; float: right; width: 255px; padding: 0;}*/
+.ship-option-row .left-bl input {margin-left:2px;}
+.product-thumbnail {max-width:510px; max-height:340px;}
+.delivery-benef-wrap .fedex-charge {
+    color: #006d9c !important;
+    font-family: "Gotham SSm A","Gotham SSm B";
+    font-style: normal;
+    font-weight: 500;
+}
+.ordered-row {border-top: 1px solid #dedfe0;}
+.order-information-total {width: 290px;}
+.order-information-total .sub-total-row td {padding: 8px 0 5px}
+.order-information-total .total-row {border-top: 1px solid #dedfe0;}
+
+.pagination-wrap .pagination li {margin:0 2px;}
+.settings-table img {border-radius: 50px; border:1px solid lightgray;}
+
+.section h3.card-name {height:18px; margin:30px 0 50px;}
+.ld-item-info-wrap {min-height:156px;}
+.radio-success input[type=radio] {display:none;}
+
+/*temp*/
+#custom-notification {
+    padding:10px;
+    background-color: #0f2c3b;
+    color: white;
+    text-align:center;
+    font-size: 12px;
+}
+
+/*bubbles*/
+.pswp__zoom-wrap {
+    position: relative;
+}
+.btn-show-bubbles {
+    background: rgba(255, 255, 255, 0.65) none repeat scroll 0 0 !important;
+    border-radius: 6px;
+    color: black !important;
+    display: inline;
+    float: none;
+    font-size: 18px;
+    font-weight: bold;
+    height: inherit;
+    margin: 0;
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.bubble {
+    -moz-user-select: none;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 6px;
+    padding: 0 10px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}                    
+.bubble::before {
+    background-color: rgba(0, 0, 0, 0.95);
+    border-width: 1px 1px 0 0;
+    content: " ";
+    display: block;
+    height: 13px;
+    left: 50%;
+    top: -5px;
+    margin-left: -5px;
+    position: absolute;
+    transform: rotate(-224deg);
+    transform-origin: 50% 50% 0;
+    width: 10px;
+    z-index: 99;
+}
+#nav-filters .ipad {display:none;}
+
+@media only screen and (max-width : 1024px) {
+    .temp-info-wrap {height:60px; line-height:15px;}
+    .top_menu .menu .sub-menu-col:first-child {min-height:inherit;}
+}
+
+@media only screen and (max-width : 1024px) and (min-width: 767px) {
+    #nav-filters .ipad {display:block;}
+    #nav-filters .desktop {display:none;}
+    .search-filter ul {width: 32%;}
+    .search-filter ul li {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+    
+@media only screen and (max-width : 992px) { 
+    .top_menu .menu li.mobile-menu-item {display:inherit;}   
+    .temp-info-wrap {height:60px; line-height:inherit;}
+}
+@media only screen and (max-width : 479px) {
+    .bubble {
+        font-size: 10px;
+        padding: 0 5px;
+        line-height: 20px;  
+    }
+    
+    .temp-info-wrap {margin:0 10px;}
+    .top_menu .menu .sub-menu-col:first-child {min-height:inherit;;}
+    .ld-total-price .ld-price-amount {font-size: 25px;}
+    .templ-detail .det-ord-cont .price-html .avg-price {font-size:25px;}
+    .templ-detail .det-ord-cont .price-html .saved-price {font-size:18px;}
+    .templ-detail .det-ord-cont .price-html .total-price {font-size:20px;}
+    .ordered-table .right-bl .turnaround-hint {display:none;}
+    .design-item-section h2 {font-size:12px;}
+    .design-img-overflow {font-size:8px;}
+
+    .checkout-page .top-block li {font-size: 11px; padding: 0 2px;}
+}
+@media only screen and (max-width : 320px) {
+    .temp-info-wrap { height:auto; }
+    .btn-show-bubbles {font-size:10px; padding:5px; display:inline !important;}
+    .templ-detail .share-icons-wrap {margin-bottom:10px;}
+    .templ-detail .share-icons-wrap a {display:inline-block;}
+    
+    .templ-det-gallery-wrap h1, 
+    .templ-upload-gallery-wrap h1 {font-size:16px;}
+    .templ-detail .det-ord-titl h3, 
+    .template-upload-bl .template-upload-bl-titl h3 {font-size:18px;}
+    
+    
+    #checkout-steps-box .col-md-12 {padding:0;}
+    #checkout-steps-box .shipping-block ul {margin-bottom:20px;}
+    #checkout-steps-box .shipping-block h3 {margin-top:20px;}
+    #checkout-steps-box .ship-option-row .radio label {padding-left:22px;}
+    .checkout-page .checkout-section {font-size:16px;}
+    #checkout-steps-box .radio label,
+    #checkout-steps-box .checkbox label {width:100%;}
+    #checkout-steps-box .ship-option-row .shipping-option-price {float:right; margin-left:0;}
+}

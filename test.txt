@@ -1,0 +1,6 @@
+<div class="option-row">
+            <div class="radio radio-success">
+                <input class="payment-radio" id="payment-radio-creditcard" name="payment-method" type="radio" value="credit"> 
+                <label for="payment-radio-creditcard">Credit Card</label>
+            </div>
+        </div>

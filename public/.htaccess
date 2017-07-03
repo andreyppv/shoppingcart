@@ -1,0 +1,196 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+    
+    # Rules for old pages from old site
+
+    RewriteCond %{QUERY_STRING} cname=Business-Card-Template-Packages [NC]
+    RewriteRule ^prod(.*)$ /business-card-templates/? [L,R=301]
+    RewriteCond %{QUERY_STRING} cname=Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /? [L,R=301]
+    RewriteCond %{QUERY_STRING} cname=High-End-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} cname=Laser-Engraved-Cards [NC]
+    RewriteRule ^prod(.*)$ /quick-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} cname=Metal-Cards [NC]
+    RewriteRule ^prod(.*)$ /metal-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} cname=Plastic-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /plastic-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} cname=Post-Cards [NC]
+    RewriteRule ^prod(.*)$ /? [L,R=301]
+    RewriteCond %{QUERY_STRING} cname=Style-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} cname=Triplex-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /luxury-business-cards/triplex-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=16-PT-Spot-UV-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/2-sided-spot-uv-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=16PT-Spot-UV-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/2-sided-spot-uv-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=2-Sided-SPOT-UV-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/2-sided-spot-uv-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=2-Sided-SPOT-UV-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/2-sided-spot-uv-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=32PT-Silk-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/32pt-silk-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=34PT-Silk-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/32pt-silk-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Black-Business-Card [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/black-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Black-Metal-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /metal-business-cards/black-metal-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Black-Metal-Card [NC]
+    RewriteRule ^prod(.*)$ /metal-business-cards/black-metal-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Brown-Kraft-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/brown-kraft-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Clear-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /plastic-business-cards/clear-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Custom-Business-Cards-16PT [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/2-sided-spot-uv-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Duplex-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/duplex-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Economy-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Emboss-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /luxury-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Foil-Stamping-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /luxury-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Folded-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /luxury-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Free-Business-Cards-for-Recent-Graduates [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Frost-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /plastic-business-cards/frost-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Frost-PVC-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /plastic-business-cards/frost-pvc-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Frosted-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /plastic-business-cards/frost-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Glossy-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Gray-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/gray-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Hard-Suede-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /luxury-business-cards/hard-suede-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Letterpress-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/letterpress-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Metal-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /metal-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Natural-White-Uncoated-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/natural-cream-uncoated-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Post-Card-Direct-Mail-Campaign [NC]
+    RewriteRule ^prod(.*)$ /? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Premium-White-Uncoated-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/premium-uncoated-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Promotional-16PT-Spot-UV-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/2-sided-spot-uv-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Promotional-Spot-UV-Foil-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/2-sided-spot-uv-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Rounded-Corners-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/2-sided-spot-uv-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Smooth-Silk-Lamination-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/2-sided-spot-uv-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Smooth-White-Uncoated-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/smooth-uncoated-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=SPOT-UV-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /classic-business-cards/2-sided-spot-uv-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Stainless-Steel-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /metal-business-cards/stainless-steel-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Stainless-Steel-Cards [NC]
+    RewriteRule ^prod(.*)$ /metal-business-cards/stainless-steel-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Suede-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /luxury-business-cards/hard-suede-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Triplex-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /luxury-business-cards/triplex-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=Ultra-Thick-PVC-Frost-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /plastic-business-cards/? [L,R=301]
+    RewriteCond %{QUERY_STRING} pname=White-Uncoated-Business-Cards [NC]
+    RewriteRule ^prod(.*)$ /premium-business-cards/smooth-uncoated-business-cards/? [L,R=301]
+
+
+    #RewriteCond %{HTTP_HOST} !^www\.
+    #RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L,NC]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    RewriteCond %{THE_REQUEST} /index [NC]    
+    RewriteRule ^ / [R=302,L,NE]
+
+    #RewriteRule ^(.*)$ / [L,QSA]
+    #RewriteRule ^(.*)$ /index.php [L,QSA]
+
+    # 301 Redirects plain
+    Redirect 301 /high-end-business-cards   /premium-business-cards
+    Redirect 301 /style-business-cards      /classic-business-cards
+    Redirect 301 /download-templates        /business-card-templates
+    Redirect 301 /free-design-templates     /business-card-templates
+    Redirect 301 /special-printing          /corporate-orders
+    
+    Redirect 301 /2-Sided-SPOT-UV-Business-Cards    /classic-business-cards/2-sided-spot-uv-business-cards
+    Redirect 301 /32pt-Silk-Business-Card           /premium-business-cards/32pt-silk-business-cards
+    Redirect 301 /Black-Business-Cards              /premium-business-cards/black-business-cards
+    Redirect 301 /Black-Metal-Cards                 /metal-business-cards/black-metal-business-cards
+    Redirect 301 /Black-Metal-Business-Cards	    /metal-business-cards/black-metal-business-cards
+    Redirect 301 /Brass-Metal-Cards                 /metal-business-cards/gold-metal-business-cards
+    Redirect 301 /Brown-Kraft-Business-Cards        /premium-business-cards/brown-kraft-business-cards
+    Redirect 301 /business-card-design              /design-services/business-card-design-services
+    Redirect 301 /Clear-Business-Cards              /plastic-business-cards/clear-business-cards
+    Redirect 301 /Duplex-Business-Cards             /premium-business-cards/black-business-cards
+    Redirect 301 /Frost-Business-Cards              /plastic-business-cards/frost-business-cards
+    Redirect 301 /Frost-PVC-Business-Cards          /plastic-business-cards/frost-pvc-business-cards
+    Redirect 301 /Gray-Business-Cards               /premium-business-cards/gray-business-cards
+    Redirect 301 /Hard-Suede-Business-Cards         /luxury-business-cards/hard-suede-business-cards
+    Redirect 301 /Laser-Engraved-Black-Business-Card    /quick-business-cards/laser-engraved-black-business-cards
+    Redirect 301 /Laser-Engraved-Black-Metal-Card       /quick-business-cards/laser-engraved-black-metal-business-cards
+    Redirect 301 /Letterpress-Business-Cards            /premium-business-cards/letterpress-business-cards
+    Redirect 301 /Luxury-Black-Metal-Cards              /metal-business-cards/luxury-black-metal-business-cards
+    Redirect 301 /Natural-Cream-Uncoated-Business-Cards /classic-business-cards/natural-cream-uncoated-business-cards
+    Redirect 301 /Premium-White-Uncoated-Business-Cards /premium-business-cards/premium-uncoated-business-cards
+    Redirect 301 /Regular-Suede-Business-Cards          /classic-business-cards/regular-suede-business-cards
+    Redirect 301 /Smooth-White-Uncoated-Business-Cards  /premium-business-cards/smooth-uncoated-business-cards
+    Redirect 301 /Soft-Suede-Business-Cards             /luxury-business-cards/soft-suede-business-cards
+    Redirect 301 /Stainless-Steel-Cards                 /metal-business-cards/stainless-steel-business-cards
+    
+    Redirect 301 /2-Sided-SPOT-UV-Business-Cards.php	/classic-business-cards/2-sided-spot-uv-business-cards
+    Redirect 301 /32pt-Silk-Business-Card.php	/premium-business-cards/32pt-silk-business-cards
+    Redirect 301 /Black-Business-Cards.php	/premium-business-cards/black-business-cards
+    Redirect 301 /Black-Metal-Cards.php	/metal-business-cards/black-metal-business-cards
+    Redirect 301 /Brass-Metal-Cards.php	/metal-business-cards/gold-metal-business-cards
+    Redirect 301 /Brown-Kraft-Business-Cards.php	/premium-business-cards/brown-kraft-business-cards
+    Redirect 301 /Clear-Business-Cards.php	/plastic-business-cards/clear-business-cards
+    Redirect 301 /Duplex-Business-Cards.php	/premium-business-cards/duplex-business-cards
+    Redirect 301 /Frost-Business-Cards.php	/plastic-business-cards/frost-business-cards
+    Redirect 301 /Frost-PVC-Business-Cards.php	/plastic-business-cards/frost-pvc-business-cards
+    Redirect 301 /Gray-Business-Cards.php	/premium-business-cards/gray-business-cards
+    Redirect 301 /Hard-Suede-Business-Cards.php	/luxury-business-cards/hard-suede-business-cards
+    Redirect 301 /Laser-Engraved-Black-Business-Card.php	/quick-business-cards/laser-engraved-black-business-cards
+    Redirect 301 /Laser-Engraved-Black-Metal-Card.php	/quick-business-cards/laser-engraved-black-metal-business-cards
+    Redirect 301 /Letterpress-Business-Cards.php	/premium-business-cards/letterpress-business-cards
+    Redirect 301 /Luxury-Black-Metal-Cards.php	/metal-business-cards/luxury-black-metal-business-cards
+    Redirect 301 /Natural-Cream-Uncoated-Business-Cards.php	/classic-business-cards/natural-cream-uncoated-business-cards
+    Redirect 301 /Premium-White-Uncoated-Business-Cards.php	/premium-business-cards/premium-uncoated-business-cards
+    Redirect 301 /Regular-Suede-Business-Cards.php	/classic-business-cards/regular-suede-business-cards
+    Redirect 301 /Smooth-White-Uncoated-Business-Cards.php	/premium-business-cards/smooth-uncoated-business-cards
+    Redirect 301 /Soft-Suede-Business-Cards.php	/luxury-business-cards/soft-suede-business-cards
+    Redirect 301 /Stainless-Steel-Cards.php	/metal-business-cards/stainless-steel-business-cards
+    Redirect 301 /business-card-design.php	/design-services/business-card-design-services
+    Redirect 301 /design-services.php	/design-services
+    Redirect 301 /download-templates.php	/business-card-templates
+    Redirect 301 /free-design-templates.php	/business-card-templates
+    Redirect 301 /high-end-business-cards.php	/luxury-business-cards
+    Redirect 301 /metal-business-cards.php	/metal-business-cards
+    Redirect 301 /plastic-business-cards.php	/plastic-business-cards
+    Redirect 301 /quick-business-cards.php	/quick-business-cards
+    Redirect 301 /special-printing.php	/corporate-orders
+    Redirect 301 /style-business-cards.php	/classic-business-cards
+
+
+</IfModule>
